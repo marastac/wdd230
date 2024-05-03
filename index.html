@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mario Astonitas - WDD230 - Web Frontend Development</title>
+    <meta name="description" content="Mario Astonitas - WDD230 - course assignment portal">
+    <meta name="author" content="Mario Astonitas">
+
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+
 </head>
-<body>
-    
+<body>   
+    <header>
+        <img src="images/profile.jpg" alt="Mario Astonitas" width="75" height="80">
+        <h1>Mario Astonitas</h1>
+        <span></span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+    <main> 
+        <h1>Web Frontend Development</h1> 
+      
+        <div class="parent">
+            <section>
+                <h2>Learning Activities</h2>
+                <ul>
+                    <!-- Learning activities will be populated throughout the course -->
+                    <li><a href="#">Activity 1</a></li>
+                    <li><a href="#">Activity 2</a></li>
+                    <li><a href="#">Activity 3</a></li>
+                    <li><a href="#">Activity 4</a></li>
+                    <li><a href="#">Activity 5</a></li>
+                    <li><a href="#">Activity 6</a></li>
+                </ul>
+            </section>  
+            <section>
+                <h2>Information</h2>  
+                <!-- Information placeholders about the weather, number of visits, etc. -->
+                <p>Lima-Peru</p>
+            </section>  
+        </div><!-- end parent -->  
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> [Mario Astonitas] [Lima, Peru]</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
 </body>
 </html>
