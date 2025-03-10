@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Mario Alberto Astonitas | Course Assignment Portal">
+    <meta name="author" content="Mario Alberto Astonitas">
+    <title>Mario Alberto Astonitas - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Mario Alberto Astonitas Profile Picture" class="profile-pic">
+        <span>Mario Alberto Astonitas</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        
+        <div class="card-container">
+            <section class="card learning-activities">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 01: <a href="#">Layout</a> | <a href="#">Media Query</a> | <a href="#">JS Pen</a></li>
+                    <li>Week 02:</li>
+                    <li>Week 03:</li>
+                    <li>Week 04:</li>
+                    <li>Week 05:</li>
+                    <li>Week 06:</li>
+                </ul>
+            </section>
+
+            <section class="card information">
+                <h2>Information</h2>
+                <p>Lima, Peru</p>
+                <p>😊 76°F - Sunshine</p>
+                <p>Page Visits : 15</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> 🌸 Mario Astonitas Acuña 🌸 Peru <img src="images/peru.png" alt="Peru Flag" class="flag"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>

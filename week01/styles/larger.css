@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    nav li {
+        flex: 1;
+    }
+    
+    .card-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    
+    .card {
+        margin: 0;
+        height: 100%;
+    }
+}
