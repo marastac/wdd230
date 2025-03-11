@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Site Plan - Peru Chamber of Commerce</title>
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-color: #D91023; /* Red - from Peruvian flag */
+            --secondary-color: #FFFFFF; /* White - from Peruvian flag */
+            --accent-color: #0047AB; /* Blue - complementary business color */
+            --background-color: #f8f9fa; /* Light background */
+            --text-color: #212529; /* Dark text */
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .color-sample {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .color-box {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .color-box div:first-child {
+            height: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .color-box div:last-child {
+            height: 25%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .typography-sample {
+            margin-top: 20px;
+        }
+
+        .wireframes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .wireframe {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .wireframe img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .wireframe-title {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .wireframes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Site Plan - Peru Chamber of Commerce</h1>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Peru Chamber of Commerce</strong></p>
+            <p>This name represents the national chamber of commerce of Peru, a country with a rich cultural heritage and growing business landscape. The name is straightforward and clearly identifies the organization's purpose and scope, making it immediately recognizable to both local businesses and international visitors seeking business opportunities in Peru.</p>
+        </section>
+
+        <section id="purpose">
+            <h2>Site Purpose</h2>
+            <p>The Peru Chamber of Commerce serves as a catalyst for regional economic growth, a facilitator of business leadership, and an advocate for the local business community. The main purposes of the website are:</p>
+            <ol>
+                <li><strong>Business Promotion</strong>: Create a digital platform that actively promotes local businesses through directories, success stories, and networking opportunities, enabling member businesses to increase their visibility and reach in the market.</li>
+                <li><strong>Economic Development</strong>: Provide resources, demographic information, and economic data to attract new investments and businesses to Peru, highlighting the competitive advantages of the country and growth opportunities across various sectors.</li>
+                <li><strong>Member Services</strong>: Offer a platform where current and potential members can access exclusive benefits, register for events, participate in training programs, and establish strategic connections with other members of the business community.</li>
+                <li><strong>Cultural and Tourism Integration</strong>: Showcase how Peru's rich cultural heritage and tourism industry interconnect with business opportunities, creating unique market advantages for local businesses and investment prospects.</li>
+            </ol>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <p>The following scenarios represent typical questions visitors to the site might have:</p>
+            <ol>
+                <li><strong>What networking events will the Chamber organize this quarter to connect local businesses?</strong> A newly established business owner is looking for opportunities to expand their network of professional contacts and potential clients.</li>
+                <li><strong>What are the requirements and benefits of becoming a member of the Peru Chamber of Commerce?</strong> A medium-sized company is evaluating whether to invest in a membership and which level would be most appropriate for their needs.</li>
+                <li><strong>What are the current economic growth statistics in Peru and which sectors are experiencing the greatest expansion?</strong> A foreign investor is considering opening operations in the country and needs concrete data to make informed decisions.</li>
+                <li><strong>How can my company participate in the social responsibility initiatives promoted by the Chamber?</strong> A local business seeks to improve its image and contribute positively to the community through established programs.</li>
+                <li><strong>Where can I find information on local business regulations and resources for entrepreneurs interested in Peru's emerging markets?</strong> A new entrepreneur needs guidance on legal aspects and available support to start their business in Peru.</li>
+            </ol>
+        </section>
+
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <p>The selected color scheme reflects professionalism, trust, and national identity, essential values for Peru's Chamber of Commerce:</p>
+            
+            <div class="color-sample">
+                <div class="color-box">
+                    <div style="background-color: #D91023;">Primary</div>
+                    <div>#D91023</div>
+                </div>
+                <div class="color-box">
+                    <div style="background-color: #FFFFFF; color: #212529;">Secondary</div>
+                    <div>#FFFFFF</div>
+                </div>
+                <div class="color-box">
+                    <div style="background-color: #0047AB;">Accent</div>
+                    <div>#0047AB</div>
+                </div>
+                <div class="color-box">
+                    <div style="background-color: #f8f9fa; color: #212529;">Background</div>
+                    <div>#f8f9fa</div>
+                </div>
+                <div class="color-box">
+                    <div style="background-color: #212529;">Text</div>
+                    <div>#212529</div>
+                </div>
+            </div>
+
+            <p><strong>Color Application:</strong></p>
+            <ul>
+                <li><strong>Primary color (Red #D91023)</strong>: Will be used in the main header, primary action buttons, important section titles, and navigation elements. Represents energy, passion, and is part of Peru's national identity through its flag.</li>
+                <li><strong>Secondary color (White #FFFFFF)</strong>: Will be applied to content backgrounds, some UI elements, and as contrast to the primary color. Symbolizes clarity, purity, and complements the primary color as seen in Peru's flag.</li>
+                <li><strong>Accent color (Blue #0047AB)</strong>: Will be used for important calls to action, icons, highlighted elements, and secondary buttons. Provides contrast and represents trust and professionalism in business contexts.</li>
+                <li><strong>Background color (Light Gray #f8f9fa)</strong>: Will serve as the general site background, providing adequate contrast with content and creating a clean visual experience.</li>
+                <li><strong>Text color (Dark Gray #212529)</strong>: Will be used for main content text, ensuring readability and appropriate contrast with backgrounds.</li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The selected fonts ensure professionalism, readability, and a clear visual hierarchy:</p>
+
+            <div class="typography-sample">
+                <h3>Montserrat</h3>
+                <p>Used for all headings (h1, h2, h3, etc.). This sans-serif font conveys modernity, authority, and clarity. Its strong visual presence makes it ideal for titles and highlighted elements.</p>
+                <div style="font-family: 'Montserrat', sans-serif;">
+                    <h1 style="margin: 10px 0;">Level 1 Heading</h1>
+                    <h2 style="margin: 10px 0;">Level 2 Heading</h2>
+                    <h3 style="margin: 10px 0;">Level 3 Heading</h3>
+                </div>
+
+                <h3>Roboto</h3>
+                <p>Used for body text, paragraphs, lists, and general content. This sans-serif font offers excellent readability in different sizes and devices, making it ideal for long and descriptive texts.</p>
+                <div style="font-family: 'Roboto', sans-serif;">
+                    <p>Example of paragraph text using Roboto. This font provides a comfortable and professional reading experience for users, maintaining readability across different screen sizes.</p>
+                    <ul>
+                        <li>List item using Roboto</li>
+                        <li>Another list item with the same font</li>
+                    </ul>
+                </div>
+
+                <h3>Lato</h3>
+                <p>Reserved for interface elements, buttons, navigation, and highlighted texts. This font complements the others well and adds visual variety without losing coherence.</p>
+                <div style="font-family: 'Lato', sans-serif;">
+                    <button style="padding: 8px 16px; background-color: #D91023; color: white; border: none; border-radius: 4px; cursor: pointer;">Example Button</button>
+                    <p style="font-weight: bold;">Highlighted text using Lato</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="wireframes">
+            <h2>Wireframe Diagrams</h2>
+            <p>The following diagrams show the proposed basic structure for the home page, in both mobile and desktop views:</p>
+
+            <div class="wireframes">
+                <div class="wireframe">
+                    <div class="wireframe-title">Mobile View</div>
+                    <div style="border: 1px solid #ccc; padding: 10px; width: 300px; margin: 0 auto;">
+                        <!-- Header -->
+                        <div style="background-color: #D91023; color: white; padding: 10px; text-align: center; margin-bottom: 10px;">
+                            <div style="font-weight: bold;">LOGO</div>
+                            <div style="text-align: right;">☰</div>
+                        </div>
+                        
+                        <!-- Hero -->
+                        <div style="background-color: #eee; height: 150px; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+                            <div style="text-align: center;">Main Image<br>+ Call to Action</div>
+                        </div>
+                        
+                        <!-- Welcome -->
+                        <div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #ccc;">
+                            <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Welcome</div>
+                            <div style="background-color: #eee; height: 50px; margin-bottom: 5px;"></div>
+                        </div>
+                        
+                        <!-- Events -->
+                        <div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #ccc;">
+                            <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Upcoming Events</div>
+                            <div style="background-color: #eee; height: 80px; margin-bottom: 5px;"></div>
+                        </div>
+                        
+                        <!-- Weather -->
+                        <div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #ccc;">
+                            <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Weather</div>
+                            <div style="background-color: #eee; height: 60px;"></div>
+                        </div>
+                        
+                        <!-- Businesses -->
+                        <div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #ccc;">
+                            <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Featured Businesses</div>
+                            <div style="display: flex; flex-direction: column; gap: 5px;">
+                                <div style="background-color: #eee; height: 60px;"></div>
+                                <div style="background-color: #eee; height: 60px;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA Join -->
+                        <div style="background-color: #0047AB; color: white; padding: 10px; text-align: center; margin-bottom: 10px;">
+                            <div>Join the Chamber</div>
+                        </div>
+                        
+                        <!-- Footer -->
+                        <div style="background-color: #D91023; color: white; padding: 10px; text-align: center;">
+                            <div>Contact Information</div>
+                            <div>Social Links</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wireframe">
+                    <div class="wireframe-title">Desktop View</div>
+                    <div style="border: 1px solid #ccc; padding: 10px; width: 700px; margin: 0 auto;">
+                        <!-- Header -->
+                        <div style="background-color: #D91023; color: white; padding: 10px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <div style="font-weight: bold;">LOGO</div>
+                            <div style="display: flex; gap: 20px;">
+                                <div>Home</div>
+                                <div>Discover</div>
+                                <div>Directory</div>
+                                <div>Join</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hero -->
+                        <div style="background-color: #eee; height: 200px; display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+                            <div style="text-align: center;">Main Image + Primary Call to Action</div>
+                        </div>
+                        
+                        <!-- Main content -->
+                        <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                            <!-- Left column -->
+                            <div style="flex: 2;">
+                                <!-- Welcome -->
+                                <div style="padding: 10px; margin-bottom: 20px; border: 1px dashed #ccc;">
+                                    <div style="font-weight: bold; margin-bottom: 10px;">Welcome</div>
+                                    <div style="background-color: #eee; height: 100px;"></div>
+                                </div>
+                                
+                                <!-- News/Events -->
+                                <div style="padding: 10px; border: 1px dashed #ccc;">
+                                    <div style="font-weight: bold; margin-bottom: 10px;">News and Events</div>
+                                    <div style="background-color: #eee; height: 150px;"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right column -->
+                            <div style="flex: 1;">
+                                <!-- Weather -->
+                                <div style="padding: 10px; margin-bottom: 20px; border: 1px dashed #ccc;">
+                                    <div style="font-weight: bold; margin-bottom: 10px;">Weather</div>
+                                    <div style="background-color: #eee; height: 80px;"></div>
+                                </div>
+                                
+                                <!-- Join CTA -->
+                                <div style="background-color: #0047AB; color: white; padding: 15px; text-align: center; margin-bottom: 20px;">
+                                    <div>Join the Chamber</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Businesses -->
+                        <div style="padding: 10px; margin-bottom: 20px; border: 1px dashed #ccc;">
+                            <div style="font-weight: bold; margin-bottom: 10px;">Featured Businesses</div>
+                            <div style="display: flex; gap: 15px;">
+                                <div style="flex: 1; background-color: #eee; height: 100px;"></div>
+                                <div style="flex: 1; background-color: #eee; height: 100px;"></div>
+                                <div style="flex: 1; background-color: #eee; height: 100px;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Footer -->
+                        <div style="background-color: #D91023; color: white; padding: 15px; display: flex; justify-content: space-between;">
+                            <div>Contact Information</div>
+                            <div>Site Map</div>
+                            <div>Social Links</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
