@@ -5,3 +5,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // Última modificación de la página
     document.getElementById("lastModified").textContent = "Last Modification: 01/01/1970 12:00:00";
 });
+
+
