@@ -6,24 +6,36 @@
     <meta name="description" content="WDD 230 - Web Frontend Development | Mario Alberto Astonitas | Course Assignment Portal">
     <meta name="author" content="Mario Alberto Astonitas">
     <title>Mario Alberto Astonitas - WDD 230 - Web Frontend Development</title>
+    
+    
     <meta property="og:title" content="Mario Alberto Astonitas - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://media.istockphoto.com/id/1392384452/es/foto/cajamarca-per%C3%BA.jpg?s=2048x2048&w=is&k=20&c=--954ZfKRI4Vu-o63hT79ckN1o-Uart8xjkaeE-mWdQ=>
-    <meta property="og:url" content="https://marastac.github.io/wdd230/week01/index.html">
+    <meta property="og:image" content="https://media.istockphoto.com/id/1392384452/es/foto/cajamarca-per%C3%BA.jpg?s=2048x2048&w=is&k=20&c=--954ZfKRI4Vu-o63hT79ckN1o-Uart8xjkaeE-mWdQ=">
+    <meta property="og:url" content="https://marastac.github.io/wdd230/">
+    
+    
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+    
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    
+   
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="images/profile.jpg" alt="Mario Alberto Astonitas Profile Picture" class="profile-pic">
         <span>Mario Alberto Astonitas</span>
+        <div class="header-controls">
+            <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+            <button id="hamButton" title="Toggle Menu">☰</button>
+        </div>
     </header>
 
     <nav>
-        <ul>
+        <ul id="primaryNav">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
@@ -51,7 +63,7 @@
                 <h2>Information</h2>
                 <p>Lima, Peru</p>
                 <p>😊 76°F - Sunshine</p>
-                <p>Page Visits : 15</p>
+                <p>Page Visits: <span id="visits">15</span></p>
             </section>
         </div>
     </main>

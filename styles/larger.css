@@ -18,4 +18,12 @@
         margin: 0;
         height: 100%;
     }
+    
+    #hamButton {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex !important;
+    }
 }
