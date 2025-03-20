@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    nav a {
+        display: inline;
+    }
+}
