@@ -1,78 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 - Web Frontend Development | Mario Alberto Astonitas | Course Assignment Portal">
-    <meta name="author" content="Mario Alberto Astonitas">
-    <title>Mario Alberto Astonitas - WDD 230 - Web Frontend Development</title>
-    
-    
-    <meta property="og:title" content="Mario Alberto Astonitas - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://media.istockphoto.com/id/1392384452/es/foto/cajamarca-per%C3%BA.jpg?s=2048x2048&w=is&k=20&c=--954ZfKRI4Vu-o63hT79ckN1o-Uart8xjkaeE-mWdQ=">
-    <meta property="og:url" content="https://marastac.github.io/wdd230/">
-    
-    
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
-    
-    
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    
-   
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 230 - Web Frontend Development | Mario Alberto Astonitas | Course Assignment Portal" />
+  <meta name="author" content="Mario Alberto Astonitas" />
+  <title>Mario Alberto Astonitas - WDD 230</title>
+  <meta property="og:title" content="Mario Alberto Astonitas - WDD 230 - Web Frontend Development" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://media.istockphoto.com/id/1392384452/es/foto/cajamarca-per%C3%BA.jpg?s=2048x2048&w=is&k=20&c=--954ZfKRI4Vu-o63hT79ckN1o-Uart8xjkaeE-mWdQ=" />
+  <meta property="og:url" content="https://marastac.github.io/wdd230/" />
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <img src="images/profile.jpg" alt="Mario Alberto Astonitas Profile Picture" class="profile-pic">
-        <span>Mario Alberto Astonitas</span>
-        <div class="header-controls">
-            <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
-            <button id="hamButton" title="Toggle Menu">☰</button>
-        </div>
-    </header>
+  <header>
+    <img src="images/profile.jpg" alt="Mario Alberto Astonitas Profile Picture" class="profile-pic" />
+    <span>Mario Alberto Astonitas</span>
+    <div class="header-controls">
+      <button id="darkModeToggle" title="Toggle Dark Mode">🌙</button>
+      <button id="hamButton" title="Toggle Menu">☰</button>
+    </div>
+  </header>
 
-    <nav>
-        <ul id="primaryNav">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+  <nav>
+    <ul id="primaryNav">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="./chamber/index.html">Chamber</a></li>
+      <li><a href="#">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/temple-small.webp" media="(max-width: 500px)" />
+        <img src="images/temple-large.webp" alt="Yigo Guam Temple" width="960" height="640" loading="lazy" />
+      </picture>
+      <div class="herolabel">
+        <p>Yido Guam Temple</p>
+      </div>
+    </div>
+
+    <h1>WDD 230: Web Frontend Development</h1>
+
+    <div class="card-container">
+      <section class="card learning-activities">
+        <h2>Learning Activities</h2>
+        <ul>
+          <li>Week 01: <a href="#">Layout</a> | <a href="#">Media Query</a> | <a href="#">JS Pen</a></li>
+          <li>Week 02: <a href="week03/images/landscape.webp">WebP</a></li>
+          <li>Week 03:</li>
+          <li>Week 04:</li>
+          <li>Week 05:</li>
+          <li>Week 06:</li>
         </ul>
-    </nav>
+      </section>
 
-    <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        
-        <div class="card-container">
-            <section class="card learning-activities">
-                <h2>Learning Activities</h2>
-                <ul>
-                    <li>Week 01: <a href="#">Layout</a> | <a href="#">Media Query</a> | <a href="#">JS Pen</a></li>
-                    <li>Week 02:</li>
-                    <li>Week 03:</li>
-                    <li>Week 04:</li>
-                    <li>Week 05:</li>
-                    <li>Week 06:</li>
-                </ul>
-            </section>
+      <section class="card information">
+        <h2>Information</h2>
+        <p>Lima, Peru</p>
+        <p>😊 76°F - Sunshine</p>
+        <p>Page Visits: <span id="visits">0</span></p>
+      </section>
+    </div>
 
-            <section class="card information">
-                <h2>Information</h2>
-                <p>Lima, Peru</p>
-                <p>😊 76°F - Sunshine</p>
-                <p>Page Visits: <span id="visits">15</span></p>
-            </section>
-        </div>
-    </main>
+    <iframe
+      loading="lazy"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9756.837824143182!2d-77.0427548!3d-12.046373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c6ec2b7c5d%3A0x4e4e9757b94c5a49!2sLima%2C%20Peru!5e0!3m2!1sen!2spe!4v1672511223443"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </main>
 
-    <footer>
-        <p>&copy;<span id="year"></span> 🌸 Mario Astonitas Acuña 🌸 Peru <img src="images/peru.png" alt="Peru Flag" class="flag"></p>
-        <p id="lastModified"></p>
-    </footer>
+  <footer>
+    <p>&copy;<span id="year"></span> 🌸 Mario Astonitas Acuña 🌸 Peru <img src="images/peru.png" alt="Peru Flag" class="flag" /></p>
+    <p id="lastModified"></p>
+  </footer>
 
-    <script src="scripts/getDates.js"></script>
+  <script src="scripts/getDates.js"></script>
 </body>
 </html>
