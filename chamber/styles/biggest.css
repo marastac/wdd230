@@ -1,43 +1,52 @@
 @media (min-width: 768px) {
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #004080;
-      padding: 1rem;
-    }
-  
-    #menu-toggle {
-      display: none;
-    }
-  
-    #menu {
-      display: flex !important;
-      flex-direction: row;
-      position: static;
-      width: auto;
-      background-color: transparent;
-    }
-  
-    #menu li {
-      margin: 0 15px;
-    }
-  
-    .discover-grid {
-      grid-template-columns: 1fr 2fr;
-    }
-  
-    .sidebar {
-      text-align: left;
-    }
-  
-    .gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .gallery img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
+  /* Navegación horizontal en pantallas grandes */
+  nav {
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
   }
-  
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  #menu li {
+    margin: 0 15px;
+  }
+
+  /* Discover Page: dos columnas */
+  .discover-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .sidebar {
+    text-align: left;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Join Page: dos columnas */
+  .join-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .form-section {
+    text-align: left;
+  }
+}
