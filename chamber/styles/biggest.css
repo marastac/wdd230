@@ -1,15 +1,43 @@
 @media (min-width: 768px) {
     nav {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #004080;
+      padding: 1rem;
     }
-
-    #menu-btn {
-        display: none;
+  
+    #menu-toggle {
+      display: none;
     }
-
-    nav a {
-        display: inline;
+  
+    #menu {
+      display: flex !important;
+      flex-direction: row;
+      position: static;
+      width: auto;
+      background-color: transparent;
     }
-}
+  
+    #menu li {
+      margin: 0 15px;
+    }
+  
+    .discover-grid {
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .sidebar {
+      text-align: left;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+  }
+  

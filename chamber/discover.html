@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discover - Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/biggest.css" />
+  <link rel="icon" href="images/favicon.ico" />
+  <script defer src="scripts/discover.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="discover-grid">
+    <aside class="sidebar">
+      <section class="welcome-msg" id="visitMessage"></section>
+
+      <section class="info-block">
+        <h3>Demographic Data</h3>
+        <p>Population: 50,000<br>Climate: Tropical<br>Industry: Tourism, Trade</p>
+      </section>
+
+      <section class="info-block">
+        <h3>Upcoming Events</h3>
+        <ul>
+          <li>Entrepreneur Fair – May 15</li>
+          <li>Business Expo 2024 – June 28</li>
+        </ul>
+      </section>
+
+      <section class="info-block calendar">
+        <h3>Calendar</h3>
+        <p>Today: <span id="today-date"></span></p>
+      </section>
+    </aside>
+
+    <section class="main-gallery">
+      <h2>Discover Our City</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/plaza_armas_cusco.webp" loading="lazy" alt="Plaza de Armas de Cusco" />
+          <figcaption>Plaza de Armas de Cusco</figcaption>
+        </figure>
+        <figure>
+          <img src="images/machu_picchu.webp" loading="lazy" alt="Machu Picchu" />
+          <figcaption>Machu Picchu</figcaption>
+        </figure>
+        <figure>
+          <img src="images/laguna_69.webp" loading="lazy" alt="Laguna 69, Huaraz" />
+          <figcaption>Laguna 69, Huaraz</figcaption>
+        </figure>
+        <figure>
+          <img src="images/costa_verde.webp" loading="lazy" alt="Costa Verde, Lima" />
+          <figcaption>Costa Verde, Lima</figcaption>
+        </figure>
+        <figure>
+          <img src="images/plaza_armas_lima.webp" loading="lazy" alt="Plaza de Armas de Lima" />
+          <figcaption>Plaza de Armas de Lima</figcaption>
+        </figure>
+        <figure>
+          <img src="images/catarata_gocta.webp" loading="lazy" alt="Gocta Waterfall, Amazonas" />
+          <figcaption>Gocta Waterfall, Amazonas</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Chamber of Commerce | Mario Alberto Astonitas Acuña | WDD 230</p>
+    <p>Last Updated: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
