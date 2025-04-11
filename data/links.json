@@ -1,0 +1,48 @@
+{
+    "weeks": [
+      {
+        "week": "Week 01",
+        "links": [
+          { "url": "", "title": "Layout" },
+          { "url": "", "title": "Media Query" },
+          { "url": "", "title": "JS Pen" }
+        ]
+      },
+      {
+        "week": "Week 02",
+        "links": [
+          { "url": "week03/images/landscape.webp", "title": "WebP" }
+        ]
+      },
+      {
+        "week": "Week 03",
+        "links": [
+          { "url": "", "title": "WebP" },
+          { "url": "", "title": "Lazy Loading" },
+          { "url": "", "title": "Local Storage" }
+        ]
+      },
+      {
+        "week": "Week 04",
+        "links": [
+          { "url": "", "title": "Form Validation" }
+        ]
+      },
+      {
+        "week": "Week 05",
+        "links": [
+          { "url": "https://codepen.io/marastac/pen/ogNrzNw", "title": "Pseudo-elements" },
+          { "url": "week5/new-ward-members.json", "title": "Json" },
+          { "url": "week5/prophets.html", "title": "Fetch API" },
+          { "url": "week5/weather.html", "title": "Weather API" }
+        ]
+      },
+      {
+        "week": "Week 06",
+        "links": [
+          { "url": "", "title": "Week 06 Activity" }
+        ]
+      }
+    ]
+  }
+  

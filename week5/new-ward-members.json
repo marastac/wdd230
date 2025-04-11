@@ -1,0 +1,29 @@
+{
+    "apellidoFamilia": "Gonzales",
+    "fechaMudanza": "2024-03-15",
+    "numeroMiembros": 4,
+    "visitadoPorObispado": true,
+    "miembros": [
+      {
+        "nombre": "Carlos Gonzales",
+        "genero": "Masculino",
+        "fechaNacimiento": "1980-06-22"
+      },
+      {
+        "nombre": "Lucía Gonzales",
+        "genero": "Femenino",
+        "fechaNacimiento": "1983-11-09"
+      },
+      {
+        "nombre": "Mateo Gonzales",
+        "genero": "Masculino",
+        "fechaNacimiento": "2010-02-17"
+      },
+      {
+        "nombre": "Sofía Gonzales",
+        "genero": "Femenino",
+        "fechaNacimiento": "2013-08-30"
+      }
+    ]
+  }
+  

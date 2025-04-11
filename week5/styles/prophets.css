@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+body {
+  font-family: 'Alatsi', sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+}
+
+header, footer {
+  background-color: #dad9eb;
+  text-align: center;
+  padding: 1rem;
+  color: #3b3486;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #c6c3e0;
+  padding: 1rem;
+  border: 1px solid #888;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.25rem;
+  color: #3b3486;
+}
+
+section p {
+  margin: 0.25rem 0;
+  font-weight: 500;
+}
+
+section img {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: auto;
+  max-width: 340px;
+  border-radius: 4px;
+}
