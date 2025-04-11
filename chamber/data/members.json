@@ -1,0 +1,52 @@
+{
+  "members": [
+    {
+      "name": "Creative Solutions Inc.",
+      "logo": "https://cdn-icons-png.flaticon.com/512/270/270798.png",
+      "membership": "Gold",
+      "address": "123 Primavera Ave, Lima, Peru",
+      "phone": "+51 987 123 456",
+      "website": "https://creative-solutions.com"
+    },
+    {
+      "name": "EcoVida Organics",
+      "logo": "https://cdn-icons-png.flaticon.com/512/2909/2909769.png",
+      "membership": "Silver",
+      "address": "456 Flower St, Cusco, Peru",
+      "phone": "+51 999 456 789",
+      "website": "https://ecovida.com"
+    },
+    {
+      "name": "Andes Adventure Tours",
+      "logo": "https://cdn-icons-png.flaticon.com/512/2933/2933884.png",
+      "membership": "Bronze",
+      "address": "789 Lima Rd, Arequipa, Peru",
+      "phone": "+51 933 555 111",
+      "website": "https://andesadventure.com"
+    },
+    {
+      "name": "Digital Pro Studio",
+      "logo": "https://cdn-icons-png.flaticon.com/512/3062/3062634.png",
+      "membership": "Gold",
+      "address": "2020 Marina Ave, Trujillo, Peru",
+      "phone": "+51 901 321 654",
+      "website": "https://digitalprostudio.com"
+    },
+    {
+      "name": "Altura Coffee Roasters",
+      "logo": "https://cdn-icons-png.flaticon.com/512/1037/1037760.png",
+      "membership": "Silver",
+      "address": "88 San Juan Alley, Cajamarca, Peru",
+      "phone": "+51 955 000 888",
+      "website": "https://alturacoffee.com"
+    },
+    {
+      "name": "Los Andes Hardware",
+      "logo": "https://cdn-icons-png.flaticon.com/512/2965/2965567.png",
+      "membership": "Bronze",
+      "address": "200 Industrial Ave, Juliaca, Peru",
+      "phone": "+51 988 444 333",
+      "website": "https://losandeshardware.com"
+    }
+  ]
+}
