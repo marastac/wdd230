@@ -1,0 +1,19 @@
+{
+    "members": [
+      {
+        "name": "Cusco Coffee",
+        "logo": "images/business1.jpg",
+        "membership": "Gold",
+        "description": "Best Peruvian coffee beans.",
+        "website": "#"
+      },
+      {
+        "name": "Andes Fitness",
+        "logo": "images/business2.jpg",
+        "membership": "Silver",
+        "description": "24/7 Gym and Personal Training.",
+        "website": "#"
+      }
+    ]
+  }
+  

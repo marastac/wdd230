@@ -9,12 +9,13 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #2e4e7545;
 }
+
 
 /* Encabezado */
 header {
-  background: #004080;
+  background: #2e4e75;
   color: white;
   padding: 1rem;
 }
@@ -88,7 +89,7 @@ nav ul li a {
 #hero {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,16 +106,30 @@ nav ul li a {
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  backdrop-filter: blur(4px);
 }
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
 
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background: #f39c12;
+  background: #12a4f3;
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -324,5 +339,133 @@ footer {
 
 .member-card a:hover {
   text-decoration: underline;
+}
+
+.banner {
+  background-color: #f1c40f;
+  color: black;
+  padding: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.card {
+  background-color: #eef3f8; 
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  max-width: 900px;
+  text-align: center;
+}
+
+
+
+.featured-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.member-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.member-card h3 {
+  margin: 0.5rem 0 0.3rem;
+  color: #1f4e79;
+}
+
+.member-card a {
+  color: #1f4e79;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode nav a {
+  color: #f1f1f1;
+}
+
+.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+.dark-mode .member-card {
+  background-color: #333;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .member-card h3,
+.dark-mode .member-card a {
+  color: #9dd3ff;
+}
+
+.dark-mode .hero-content,
+.dark-mode .herolabel {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .cta-button {
+  background-color: #2980b9;
+  color: white;
+}
+/* ======= ESTILO PARA LA BARRA LATERAL DE DISCOVER ======= */
+.sidebar .info-block {
+  background-color: #f3f6fb;
+  border-left: 4px solid #1e90ff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.sidebar h3 {
+  color: #1e3a5f;
+  margin-bottom: 0.5rem;
 }
 

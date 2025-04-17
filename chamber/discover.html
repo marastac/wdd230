@@ -4,16 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Discover - Chamber of Commerce</title>
+  <meta name="description" content="Discover the beauty, culture and opportunities in our city.">
+  <meta name="author" content="Mario Alberto Astonitas Acuña">
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/biggest.css" />
   <link rel="icon" href="images/favicon.ico" />
+  <script defer src="scripts/main.js"></script>
   <script defer src="scripts/discover.js"></script>
 </head>
 <body>
   <header>
     <h1>Chamber of Commerce</h1>
     <nav>
-      <button id="menu-toggle">☰</button>
+      <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
       <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html" class="active">Discover</a></li>
@@ -26,51 +29,60 @@
   <main class="discover-grid">
     <aside class="sidebar">
       <section class="welcome-msg" id="visitMessage"></section>
-
+    
       <section class="info-block">
-        <h3>Demographic Data</h3>
-        <p>Population: 50,000<br>Climate: Tropical<br>Industry: Tourism, Trade</p>
-      </section>
-
-      <section class="info-block">
-        <h3>Upcoming Events</h3>
+        <h3>📊 Demographic Insights</h3>
+        <p><strong>Population:</strong> 52,300 residents</p>
+        <p><strong>Climate:</strong> Tropical, avg. 22°C – 30°C</p>
+        <p><strong>Main Industries:</strong></p>
         <ul>
-          <li>Entrepreneur Fair – May 15</li>
-          <li>Business Expo 2024 – June 28</li>
+          <li>🏨 Tourism</li>
+          <li>🛍️ Commerce</li>
+          <li>🏭 Agro-industry</li>
         </ul>
       </section>
-
+    
+      <section class="info-block">
+        <h3>📆 Upcoming Events</h3>
+        <ul>
+          <li><strong>May 15:</strong> Entrepreneur Fair – Plaza Central</li>
+          <li><strong>June 10:</strong> Local Products Expo</li>
+          <li><strong>June 28:</strong> Business Networking Night</li>
+        </ul>
+      </section>
+    
       <section class="info-block calendar">
-        <h3>Calendar</h3>
-        <p>Today: <span id="today-date"></span></p>
+        <h3>📅 Today's Date</h3>
+        <p><span id="today-date"></span></p>
       </section>
     </aside>
+    
 
     <section class="main-gallery">
       <h2>Discover Our City</h2>
       <div class="gallery">
         <figure>
-          <img src="images/plaza_armas_cusco.webp" loading="lazy" alt="Plaza de Armas de Cusco" />
+          <img src="images/plaza_armas_cusco.jpg" loading="lazy" alt="Plaza de Armas de Cusco" />
           <figcaption>Plaza de Armas de Cusco</figcaption>
         </figure>
         <figure>
-          <img src="images/machu_picchu.webp" loading="lazy" alt="Machu Picchu" />
+          <img src="images/machu_picchu.png" loading="lazy" alt="Machu Picchu" />
           <figcaption>Machu Picchu</figcaption>
         </figure>
         <figure>
-          <img src="images/laguna_69.webp" loading="lazy" alt="Laguna 69, Huaraz" />
+          <img src="images/laguna_69.jpg" loading="lazy" alt="Laguna 69, Huaraz" />
           <figcaption>Laguna 69, Huaraz</figcaption>
         </figure>
         <figure>
-          <img src="images/costa_verde.webp" loading="lazy" alt="Costa Verde, Lima" />
+          <img src="images/costa_verde.jpg" loading="lazy" alt="Costa Verde, Lima" />
           <figcaption>Costa Verde, Lima</figcaption>
         </figure>
         <figure>
-          <img src="images/plaza_armas_lima.webp" loading="lazy" alt="Plaza de Armas de Lima" />
+          <img src="images/plaza_armas_lima.jpg" loading="lazy" alt="Plaza de Armas de Lima" />
           <figcaption>Plaza de Armas de Lima</figcaption>
         </figure>
         <figure>
-          <img src="images/catarata_gocta.webp" loading="lazy" alt="Gocta Waterfall, Amazonas" />
+          <img src="images/catarata_gocta.jpg" loading="lazy" alt="Gocta Waterfall, Amazonas" />
           <figcaption>Gocta Waterfall, Amazonas</figcaption>
         </figure>
       </div>

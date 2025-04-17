@@ -1,19 +1,24 @@
+// directory.js
+
 const url = "data/members.json";
 const container = document.querySelector("#members-container");
 const gridBtn = document.querySelector("#gridView");
 const listBtn = document.querySelector("#listView");
 
-// Load and display members
+// Cargar y mostrar los miembros
 async function getMembers() {
   try {
     const response = await fetch(url);
+    if (!response.ok) throw new Error("Network response was not ok");
     const data = await response.json();
     displayMembers(data.members);
   } catch (error) {
     console.error("Error loading members:", error);
+    container.innerHTML = `<p class="error-message">⚠️ Unable to load members at this time. Please try again later.</p>`;
   }
 }
 
+// Crear y mostrar tarjetas de miembro
 function displayMembers(members) {
   container.innerHTML = "";
 
@@ -22,7 +27,7 @@ function displayMembers(members) {
     card.classList.add("member-card");
 
     const img = document.createElement("img");
-    img.src = member.logo; // <- CAMBIADO de 'member.image' a 'member.logo'
+    img.src = member.logo;
     img.alt = `Logo of ${member.name}`;
     img.loading = "lazy";
 
@@ -33,7 +38,7 @@ function displayMembers(members) {
     membership.textContent = `Membership Level: ${member.membership}`;
 
     const description = document.createElement("p");
-    description.textContent = member.description || ""; // si no hay, evita error
+    description.textContent = member.description || "";
 
     const address = document.createElement("p");
     address.textContent = member.address;
@@ -45,6 +50,7 @@ function displayMembers(members) {
     website.href = member.website;
     website.textContent = "Visit Website";
     website.target = "_blank";
+    website.rel = "noopener noreferrer";
 
     card.appendChild(img);
     card.appendChild(name);
@@ -58,7 +64,7 @@ function displayMembers(members) {
   });
 }
 
-// Toggle views
+// Cambiar vista
 gridBtn.addEventListener("click", () => {
   container.classList.add("grid-view");
   container.classList.remove("list-view");

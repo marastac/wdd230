@@ -4,15 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Join the Chamber</title>
+  <meta name="description" content="Fill out the form to become a member of the Chamber of Commerce.">
+  <meta name="author" content="Mario Alberto Astonitas Acuña">
   <link rel="stylesheet" href="styles/base.css" />
   <link rel="stylesheet" href="styles/biggest.css" />
-  
+  <link rel="icon" href="images/favicon.ico" />
+  <script defer src="scripts/main.js"></script>
 </head>
 <body>
   <header>
     <h1>Chamber of Commerce</h1>
     <nav>
-      <ul>
+      <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
@@ -59,7 +63,7 @@
         </label>
 
         <label>Description:
-          <textarea name="description" id="description" rows="5"></textarea>
+          <textarea name="description" id="description" rows="5" placeholder="Brief description about your business..."></textarea>
         </label>
 
         <input type="hidden" name="timestamp" id="timestamp" />
@@ -83,6 +87,7 @@
 
   <footer>
     <p>&copy; 2025 Chamber of Commerce. All rights reserved.</p>
+    <p>Last Updated: <span id="last-modified"></span></p>
   </footer>
 
   <script>
